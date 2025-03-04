@@ -3,83 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Blog</title>
-    <meta name="description" content="Awesome blog by Dominion Boluwatife" />
-    <meta
-      name="keywords"
-      content="web design blog,
-    web dev blog, teephe media"
-    />
-    <style type="text/css">
-      #main-header {
-        text-align: center;
-        background-color: black;
-        color: white;
-        padding: 10px;
-      }
-
-      #main-footer {
-        text-align: center;
-        font-size: 18px;
-      }
-    </style>
+    <title>Document</title>
   </head>
   <body>
-    <header id="main-header">
-      <h1>My Website</h1>
-    </header>
-
-    <section>
-      <article class="Post">
-        <h3>Blog Post One</h3>
-        <small>Posted by Dominion on February 26</small>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
-          praesentium ducimus quam libero placeat delectus quaerat eum harum
-          illum iusto sunt debitis, dolorum excepturi error assumenda autem
-          nihil? Corrupti, officiis.
-        </p>
-        <a href="post.html">Read More</a>
-      </article>
-
-      <article class="Post">
-        <h3>Blog Post Two</h3>
-        <small>Posted by Dominion on February 26</small>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
-          praesentium ducimus quam libero placeat delectus quaerat eum harum
-          illum iusto sunt debitis, dolorum excepturi error assumenda autem
-          nihil? Corrupti, officiis.
-        </p>
-        <a href="post.html">Read More</a>
-      </article>
-
-      <article class="Post">
-        <h3>Blog Post Three</h3>
-        <small>Posted by Dominion on February 26</small>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
-          praesentium ducimus quam libero placeat delectus quaerat eum harum
-          illum iusto sunt debitis, dolorum excepturi error assumenda autem
-          nihil? Corrupti, officiis.
-        </p>
-        <a href="post.html">Read More</a>
-      </article>
-    </section>
-
-    <aside>
-      <h3>Categories</h3>
-      <nav>
-        <ul>
-          <li><a href="#">Category 1</a></li>
-          <li><a href="#">Category 2</a></li>
-          <li><a href="#">Category 3</a></li>
-        </ul>
-      </nav>
-    </aside>
-
-    <footer id="main-footer">
-      <p>Copyright &copy; 2025, My Website</p>
-    </footer>
+    <form action="results.html" method="get">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <div>
+        <label for="email"> Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="1" max="200" />
+      </div>
+      <div>
+        <label for="date">Birthdate</label>
+        <input type="date" name="date" id="date" min="2025-03-04" />
+      </div>
+      <div>
+        <div>
+          Favorite Food
+          <div>
+            <label for="banana">Banana</label>
+            <input type="checkbox" name="banana" id="banana" />
+          </div>
+          <div>
+            <label for="apple">Apple</label>
+            <input type="checkbox" name="apple" id="apple" />
+          </div>
+        </div>
+        <label for="">Password</label>
+        <input type="password" name="Password" required />
+      </div>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
